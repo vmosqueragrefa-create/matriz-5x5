@@ -1,0 +1,16 @@
+#Crear el arreglo de los siguentes numeros
+
+numeros = [10, 20, 30, 40, 50]
+
+#Mostrar los numeros en la posicion 1
+
+print("El número en la posición 1 es:", numeros[1])
+
+#Recorrer todo el arreglo
+
+for numero in numeros:
+    print(numero)
+
+
+
+

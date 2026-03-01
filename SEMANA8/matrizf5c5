@@ -1,0 +1,23 @@
+# --- PROGRAMA DE MATRIZ 5X5 ---
+matriz = [[0 for _ in range(5)] for _ in range(5)]
+print("--- Registro de Datos en la Matriz ---")
+# El bucle externo recorre las filas (i)
+for i in range(5):
+    # El bucle interno recorre las columnas (j)
+    for j in range(5):
+        
+
+        valor = int(input(f"Ingrese el valor para la posición [{i}][{j}]: "))
+        matriz[i][j] = valor
+# Mostrar los datos organizados en forma de tabla
+print("\nMatriz ingresada (Forma de Tabla):")
+print("-" * 35) 
+
+for i in range(5):
+    for j in range(5):
+        
+        print(matriz[i][j], end="\t")
+    
+    
+    print()
+print("-" * 35)
