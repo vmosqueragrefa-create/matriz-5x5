@@ -1,0 +1,30 @@
+# Crear matriz 3x4 inicializada en 0 (asientos libres)
+asientos = []
+
+for i in range(3):
+    fila = []
+    for j in range(4):
+        fila.append(0)
+    asientos.append(fila)
+
+# Pedir fila y columna
+f = int(input("Ingrese fila (0 a 2): "))
+c = int(input("Ingrese columna (0 a 3): "))
+
+# Validar que esté dentro del rango
+if 0 <= f <= 2 and 0 <= c <= 3:
+    if asientos[f][c] == 0:
+        asientos[f][c] = 1
+        print("Asiento reservado correctamente.\n")
+    else:
+        print("El asiento ya está reservado.\n")
+else:
+    print("Posición inválida.\n")
+
+# Mostrar estado de la sala
+print("Estado de la sala:")
+
+for i in range(3):
+    for j in range(4):
+        print(asientos[i][j], end=" ")
+    print()
