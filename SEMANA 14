@@ -1,0 +1,18 @@
+# Declaración del método
+def calcularArea(base, altura):
+    area = base * altura
+    return area
+
+# Programa principal
+print("BUENAS TARDES PROFESOR")
+print("VAMOS A CALCULAR EL ÁREA DE UN RECTÁNGULO")
+
+# Solicitar datos al usuario
+base = float(input("Ingrese la base del rectángulo: "))
+altura = float(input("Ingrese la altura del rectángulo: "))
+
+# Llamar al método
+resultado = calcularArea(base, altura)
+
+# Mostrar resultado
+print("El área del rectángulo es:", resultado)
