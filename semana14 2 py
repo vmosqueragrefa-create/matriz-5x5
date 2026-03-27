@@ -1,0 +1,10 @@
+# crear una calculadora
+while True
+print ("______Bienvenido a mi calculadora en Python_____")
+print ("_______Menu Principal____")
+print("1.Suma")
+print("1.Resta")
+print("1.Multiplicacion")
+print("1.division")
+print("5.Salir")
+opcion = input ("ingrese la operacion que desea realizar:")
