@@ -1,0 +1,40 @@
+# Clase Estudiante
+
+class Estudiante:
+    def __init__(self, nombre, edad, carrera):
+        self.nombre = nombre
+        self.edad = edad
+        self.carrera = carrera
+        self.promedio = 0
+
+    def asignar_promedio(self, promedio):
+        self.promedio = promedio
+
+    def aprobar(self):
+        if self.promedio >= 7:
+            print(f"{self.nombre} ha aprobado la materia.")
+        else:
+            print(f"{self.nombre} no ha aprobado la materia.")
+
+    def mostrar_datos(self):
+        print("\nDatos del estudiante")
+        print("Nombre:", self.nombre)
+        print("Edad:", self.edad)
+        print("Carrera:", self.carrera)
+        print("Promedio:", self.promedio)
+
+
+# Creación de objetos
+estudiante1 = Estudiante("Diana", 20, "Ingeniería")
+estudiante2 = Estudiante("Andres", 22, "Administración")
+
+# Asignar promedios
+estudiante1.asignar_promedio(8.5)
+estudiante2.asignar_promedio(6.5)
+
+# Mostrar información y verificar aprobación
+estudiante1.mostrar_datos()
+estudiante1.aprobar()
+
+estudiante2.mostrar_datos()
+estudiante2.aprobar()
