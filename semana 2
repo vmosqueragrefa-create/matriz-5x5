@@ -8,6 +8,7 @@ class Estudiante:
         self.promedio = 0
 
     def asignar_promedio(self, promedio):
+        
         self.promedio = promedio
 
     def aprobar(self):
